@@ -1,0 +1,18 @@
+buildscript {
+	ext {
+		cleanArchitectureVersion = '1.9.1'
+		springBootVersion = '2.4.2'
+		jacocoVersion = '0.8.5'
+        lombokVersion = '1.18.16'
+	}
+}
+
+plugins {
+	id 'co.com.bancolombia.cleanArchitecture' version "1.9.1"
+	id 'org.springframework.boot' version "2.4.2"
+	id 'jacoco'
+}
+
+
+
+apply from: './main.gradle'

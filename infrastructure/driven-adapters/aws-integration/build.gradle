@@ -1,0 +1,7 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.4.RELEASE'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-aws-messaging', version: '2.2.4.RELEASE'
+}

@@ -1,0 +1,27 @@
+##Spring Configuration
+server:
+  port: 8080
+spring:
+  application:
+    name: PodemTest
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  profiles:
+    include:
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    credentials:
+      instanceProfile: true
+      useDefaultAwsCredentialsChain: true
+    stack:
+      auto: false
+application:
+  send_queue_name: podem_test
+  receive_queue_name: podem_test
+  s3_bucket_name: podemtest
