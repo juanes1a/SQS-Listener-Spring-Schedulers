@@ -1,7 +1,8 @@
 dependencies {
     compile project(':model')
     compile 'org.springframework:spring-context'
+    compile 'software.amazon.awssdk:bom:2.15.15'
+    implementation group: 'software.amazon.awssdk', name: 'sqs', version: '2.16.44'
+    implementation group: 'software.amazon.awssdk', name: 's3', version: '2.16.44'
 
-    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.4.RELEASE'
-    implementation group: 'org.springframework.cloud', name: 'spring-cloud-aws-messaging', version: '2.2.4.RELEASE'
 }
